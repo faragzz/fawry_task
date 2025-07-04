@@ -1,4 +1,4 @@
-class Product {
+abstract class Product {
     String name;
     double price;
     int quantity;
