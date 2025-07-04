@@ -14,6 +14,10 @@ public class Customer {
         balance -= amount;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
     public double getBalance() {
         return balance;
     }
