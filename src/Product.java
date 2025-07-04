@@ -14,7 +14,7 @@ class Product {
     }
 
     public boolean isShippable() {
-        return false;
+        return this  instanceof  Shippable;
     }
 
     public String getName() {
