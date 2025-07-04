@@ -1,4 +1,4 @@
-abstract class Product {
+public abstract class Product {
     String name;
     double price;
     int quantity;
