@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class Cart {
+public class Cart {
     List<CartItem> items = new ArrayList<>();
 
     public void add(Product product, int quantity) {
@@ -41,4 +41,16 @@ class Cart {
         }
         return shippableList;
     }
+
+    public double getTotalWeight() {
+        double totalWeight = 0;
+        for (CartItem item : items) {
+            if (item.product instanceof Shippable) {
+                double itemWeight = ((Shippable) item.product).getWeight();
+                totalWeight += itemWeight * item.quantity;
+            }
+        }
+        return totalWeight;
+    }
+
 }
