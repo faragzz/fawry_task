@@ -1,4 +1,4 @@
 public interface Shippable {
     String getName();
-    String getWeight();
+    double getWeight();
 }
